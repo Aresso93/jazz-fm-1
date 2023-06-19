@@ -308,17 +308,33 @@ body {
 }
 
 
+.arrow-img:not(hover) {
+    animation: arrow-rotation-2 0.5s linear;
+    animation-fill-mode: backwards;
+}
+
 
 @keyframes arrow-rotation {
     0%{
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(-45deg);
     }
     
 }
 
+@keyframes arrow-rotation-2 {
+    0%{
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(-0deg);
+    }
+    
+}
 
 
 
